@@ -1,0 +1,219 @@
+#advanced-calories-calculator-container .push-to-right{
+	float: right;
+}	
+#advanced-calories-calculator-container .push-to-left{
+	float: left;
+}	
+#advanced-calories-calculator-container .half-width {
+    width: 49%;
+}
+#advanced-calories-calculator-container .one-quarter-width {
+    width: 30%;
+}
+#advanced-calories-calculator-container .one-third-width  {
+    width: 33.333%;
+}
+#advanced-calories-calculator-container .three-quarter-width {
+    width: 70%;
+}
+#advanced-calories-calculator-container .clear-fix-both{
+	clear: both;
+}
+#advanced-calories-calculator-container .text-to-right{
+	text-align: right;
+}
+#advanced-calories-calculator-container .centered-text-align{
+	text-align: center;
+}
+#advanced-calories-calculator-container .bottom-space{
+	margin-bottom: 30px;	
+}
+#advanced-calories-calculator-container .top-space{
+	margin-top: 30px;	
+}
+#advanced-calories-calculator-container .left-space{
+	margin-left: 15px !important;	
+}
+#advanced-calories-calculator-container input#current-weight-input,
+#advanced-calories-calculator-container input#how-many-workouts-input {
+    max-width: 40px;
+}
+#advanced-calories-calculator-container select#lose-or-maintain-input {
+    max-width: 150px;
+}
+#advanced-calories-calculator-container {
+    padding: 0 30px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.hidden-before-calculations,
+#thankYouBannerForm{
+	display: none;
+}
+
+
+/* Weekly Table */
+#advanced-calories-calculator-container #weekly-table-container{
+	overflow-x:auto;
+	margin-top: 20px;
+}
+#advanced-calories-calculator-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#advanced-calories-calculator-container td, th {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 8px;
+}
+
+#advanced-calories-calculator-container tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#advanced-calories-calculator-container th:not(:first-child) {
+	text-align: center;
+}
+#advanced-calories-calculator-container th:first-child {
+    padding-left: 3px;
+}
+#advanced-calories-calculator-container th {
+    padding: 4px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 800px){
+	#advanced-calories-calculator-container .half-width,
+	#advanced-calories-calculator-container .one-quarter-width,
+	#advanced-calories-calculator-container .three-quarter-width,
+	#advanced-calories-calculator-container .one-third-width {
+		width: 100% !important;
+	}
+	#advanced-calories-calculator-container .text-to-right{
+		text-align: left !important; 		
+	}
+}
+
+
+
+
+
+
+/* Input Range */
+#advanced-calories-calculator-container input[type=range] {
+  height: 34px;
+  -webkit-appearance: none;
+  /*margin: 10px 0;*/
+  width: 100%;
+}
+#advanced-calories-calculator-container input[type=range]:focus {
+  outline: none;
+}
+#advanced-calories-calculator-container input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #74A9D8;
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+#advanced-calories-calculator-container input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000031;
+  border: 1px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+#advanced-calories-calculator-container input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #74A9D8;
+}
+#advanced-calories-calculator-container input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #74A9D8;
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+#advanced-calories-calculator-container input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000031;
+  border: 1px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+#advanced-calories-calculator-container input[type=range]::-ms-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+#advanced-calories-calculator-container input[type=range]::-ms-fill-lower {
+  background: #74A9D8;
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000;
+}
+#advanced-calories-calculator-container input[type=range]::-ms-fill-upper {
+  background: #74A9D8;
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000;
+}
+#advanced-calories-calculator-container input[type=range]::-ms-thumb {
+  /*margin-top: 1px;*/
+  box-shadow: 1px 1px 1px #000031;
+  border: 1px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+#advanced-calories-calculator-container input[type=range]:focus::-ms-fill-lower {
+  background: #74A9D8;
+}
+#advanced-calories-calculator-container input[type=range]:focus::-ms-fill-upper {
+  background: #74A9D8;
+}
+
+
+/* Button Style */
+#advanced-calories-calculator-container #calculate-button,
+#advanced-calories-calculator-container #send-via-email-button{
+	padding: 10px 15px 11px !important;
+	font-size: 18px !important;
+	background-color: #74A9D8;
+	font-weight: bold;
+	text-shadow: 1px 1px #74A9D8;
+	color: #ffffff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #74A9D8;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    margin: 0 auto;
+    display: block;	
+}
+
+#advanced-calories-calculator-container input#send-via-email-button{
+	display: inline-block !important;
+	margin-left: 3% !important;
+}
